@@ -19,6 +19,7 @@ public class HelloController {
 
     @RequestMapping("/hello/{name}")
     public String hello(@PathVariable String name) {
+        System.out.println("Ribbon");
         return helloService.helloService(name);
     }
 }

@@ -18,6 +18,7 @@ public class HelloController {
 
     @RequestMapping("/hello/{name}")
     public String index(@PathVariable("name") String name) {
+        System.out.println("EnableFeignClients");
         return HelloRemote.hello(name);
     }
 }
